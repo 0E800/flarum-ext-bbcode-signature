@@ -1,5 +1,5 @@
 <?php
-namespace ClarkWinkelmann\ComicSans\Listeners;
+namespace oe800\BBCodeSig\Listeners;
 use Flarum\Event\ConfigureFormatter;
 use Illuminate\Contracts\Events\Dispatcher;
 class AddBBCode
