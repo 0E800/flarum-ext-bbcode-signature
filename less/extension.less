@@ -1,0 +1,97 @@
+.SignatureWrapper {
+  clear:both;
+  border-top:1px dashed #e2e2e2;
+  padding-top:20px;
+ text-align: center;
+}
+
+.SignatureWrapper .tile {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: .99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.SignatureWrapper .tile:before {
+  content: '';
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.SignatureWrapper .tile img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.SignatureWrapper .tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+
+.SignatureWrapper .tile .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+
+
+.SignatureWrapper .tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+.SignatureWrapper .tile .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.SignatureWrapper .tile:focus:before,
+.SignatureWrapper .tile:focus span, .SignatureWrapper .tile:hover:before,
+.SignatureWrapper .tile:hover span {
+  opacity: 1;
+}
+.SignatureWrapper .tile:focus:before, .SignatureWrapper .tile:hover:before {
+  top: 50%;
+}
+.SignatureWrapper .tile:focus span, .SignatureWrapper .tile:hover span {
+  top: 0;
+}
+.SignatureWrapper .tile:focus .title, .SignatureWrapper .tile:hover .title {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+.SignatureWrapper .tile:focus .info, .SignatureWrapper .tile:hover .info {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
