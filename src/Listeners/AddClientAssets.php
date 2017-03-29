@@ -1,5 +1,5 @@
 <?php
-namespace 0E800\BBCode-Signature\Listeners;
+namespace oe800\BBCodeSig\Listeners;
 use Flarum\Event\ConfigureWebApp;
 use Illuminate\Contracts\Events\Dispatcher;
 class AddClientAssets
@@ -16,3 +16,4 @@ class AddClientAssets
             ]);
         }
     }
+}
