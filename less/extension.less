@@ -1,13 +1,31 @@
-.SignatureWrapper {
+//However with  Text Signature from http://codepen.io/chrisdothtml/pen/OVmgwK
+
+.Sighover {
   clear:both;
   border-top:1px dashed #e2e2e2;
   padding-top:20px;
- text-align: center;
+margin: 0 auto !important;
+float: none !important;
 }
 
-.SignatureWrapper .tile {
+.Sighover a:hover {
+    background: transparent !important;
+ color: red !important;
+
+}
+
+.Sighover a {
+     color: transparent !important;
+border-bottom: none !important;
+box-shadow: none !important;
+
+
+}
+
+.Sighover .tile2 {
   display: inline-block;
-  margin: 10px;
+   max-width: 100%;
+  height: auto;
   text-align: left;
   opacity: .99;
   overflow: hidden;
@@ -15,8 +33,7 @@
   border-radius: 3px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
 }
-
-.SignatureWrapper .tile:before {
+.Sighover .tile2:before {
   content: '';
   background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
@@ -32,15 +49,13 @@
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
-
-.SignatureWrapper .tile img {
+.Sighover .tile2 img {
   display: block;
   max-width: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-
-.SignatureWrapper .tile .details {
+.Sighover .tile2 .details {
   font-size: 16px;
   padding: 20px;
   color: #fff;
@@ -49,9 +64,7 @@
   left: 0;
   z-index: 3;
 }
-
-
-.SignatureWrapper .tile .details span {
+.Sighover .tile2 .details span {
   display: block;
   opacity: 0;
   position: relative;
@@ -63,35 +76,1263 @@
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-
-
-
-.SignatureWrapper .tile .details .title {
+.Sighover .tile2 .details .title {
   line-height: 1;
   font-weight: 600;
   font-size: 18px;
 }
-.SignatureWrapper .tile .details .info {
+.Sighover .tile2 .details .info {
   line-height: 1.2;
   margin-top: 5px;
   font-size: 12px;
 }
-.SignatureWrapper .tile:focus:before,
-.SignatureWrapper .tile:focus span, .SignatureWrapper .tile:hover:before,
-.SignatureWrapper .tile:hover span {
+.Sighover .tile2:focus:before,
+.Sighover .tile2:focus span, .Sighover .tile2:hover:before,
+.Sighover .tile2:hover span {
   opacity: 1;
 }
-.SignatureWrapper .tile:focus:before, .SignatureWrapper .tile:hover:before {
+.Sighover .tile2:focus:before, .Sighover .tile2:hover:before {
   top: 50%;
 }
-.SignatureWrapper .tile:focus span, .SignatureWrapper .tile:hover span {
+.Sighover .tile2:focus span, .Sighover .tile2:hover span {
   top: 0;
 }
-.SignatureWrapper .tile:focus .title, .SignatureWrapper .tile:hover .title {
+.Sighover .tile2:focus .title, .Sighover .tile2:hover .title {
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
 }
-.SignatureWrapper .tile:focus .info, .SignatureWrapper .tile:hover .info {
+.Sighover .tile2:focus .info, .Sighover .tile2:hover .info {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
 }
+
+
+// Signature hover with social icons from http://codepen.io/littlesnippets/pen/jbNMdM
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip0013 {
+  position: relative;
+  display: block;
+    margin: auto;
+  float: center;
+  overflow: hidden;
+  
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+}
+
+figure.snip0013 a:hover {
+    background: transparent !important;
+ color: red !important;
+
+}
+
+figure.snip0013 a {
+     color: transparent !important;
+border-bottom: none !important;
+box-shadow: none !important;
+
+}
+
+figure.snip0013 img {
+  max-width: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.snip0013 .Post-body a {
+  color: white;
+text-decoration: none;
+}
+
+figure.snip0013 > div {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+}
+figure.snip0013 > div a {
+  color: #ffffff;
+}
+figure.snip0013 > div a i {
+  font-size: 50px;
+  opacity: 0;
+  top: 50%;
+  position: relative;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  display: inline-block;
+text-decoration: none !important;
+}
+figure.snip0013 > div a i.left-icon {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+figure.snip0013 > div a i.right-icon {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+text-decoration: none;
+
+}
+figure.snip0013 > div::before {
+  position: absolute;
+  top: 30px;
+  right: 50%;
+  bottom: 30px;
+  left: 50%;
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip0013:hover img {
+  opacity: 0.35;
+}
+figure.snip0013:hover > div i {
+  opacity: 0.9;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+text-decoration: none;
+color: white;
+
+}
+figure.snip0013:hover > div i.left-icon {
+  -webkit-transform: translate3d(-25%, -50%, 0);
+  transform: translate3d(-25%, -50%, 0);
+text-decoration: none;
+
+}
+figure.snip0013:hover > div i.right-icon {
+  -webkit-transform: translate3d(25%, -50%, 0);
+  transform: translate3d(25%, -50%, 0);
+text-decoration: none !important;
+
+}
+figure.snip0013:hover > div::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  right: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+text-decoration: none !important;
+
+}
+
+
+// 9 Album Preview Animations  from http://simbyone.com/9-album-preview-animations-using-css-only/
+
+media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+
+
+.albums{
+	width: 100%;
+    float: left;
+}
+.albums-inner{
+	width: 1100px;
+	margin-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.albums-title {
+	float: left;
+	width: 100%;
+	color: rgba(53,117,159,1);
+	font-size: 20px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(53,117,159,1);
+	line-height: 50px;
+	margin-bottom: 100px;
+}
+.albums-tab{
+	float: left;
+	width: 300px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+.albums-tab:nth-child(3n+0) {
+	margin-right: 0px;
+}
+
+.albums-tab-thumb{
+	float: left;
+	width: 300px;
+	height: 200px;
+}
+.albums-tab-thumb img {
+	margin-top: 60px;
+
+  height: auto;
+	width: 290px;
+	background-color: rgba(255,255,255,1);
+	padding: 5px;		
+}
+.albums-tab-text{
+ 
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: rgba(53,117,159,1);
+	margin-top: 65px;
+	font-size: 18px;
+}
+.albums-tab-text span {
+	font-size: 14px;
+	color: rgba(102,102,102,1);
+}
+
+
+.sim-anim-9{
+	position: relative;
+	-webkit-perspective: 500px; /* Chrome, Safari, Opera */
+    perspective: 500px;
+	
+	}	
+.sim-anim-9 img{
+	position: absolute;
+	-webkit-transition: all 0.5s ;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	}
+.sim-anim-9:hover img{
+	z-index: 1;
+	}
+.sim-anim-9:hover img:nth-child(1){
+     -ms-transform: translate(0,75%) scale(0.7,0.7) rotateX(10deg);
+   	-webkit-transform: translate(0,75%)  scale(0.7,0.7) rotateX(10deg);  
+    transform: translate(0,75%)  scale(0.7,0.7) rotateX(10deg);
+	
+	}	
+.sim-anim-9:hover img:nth-child(2){
+     -ms-transform: translate(72%,75%) scale(0.7,0.7) rotateX(10deg);
+   	-webkit-transform: translate(72%,75%)  scale(0.7,0.7) rotateX(10deg);  
+    transform: translate(72%,75%)  scale(0.7,0.7) rotateX(10deg);
+	}		
+.sim-anim-9:hover img:nth-child(3){
+     -ms-transform: translate(-72%,75%) scale(0.7,0.7) rotateX(10deg);
+   	-webkit-transform: translate(-72%,75%)  scale(0.7,0.7) rotateX(10deg);  
+    transform: translate(-72%,75%)  scale(0.7,0.7) rotateX(10deg);
+
+	}	
+.sim-anim-9:hover img:nth-child(4){
+    -ms-transform: translate(-72%,0) scale(0.7,0.7) rotateX(10deg);
+   	-webkit-transform: translate(-72%,0)  scale(0.7,0.7) rotateX(10deg);  
+    transform: translate(-72%,0)  scale(0.7,0.7) rotateX(10deg); 
+	  
+	}		
+.sim-anim-9:hover img:nth-child(5){
+    -ms-transform: translate(72%,0) scale(0.7,0.7) rotateX(10deg);
+   	-webkit-transform: translate(72%,0)  scale(0.7,0.7) rotateX(10deg);  
+    transform: translate(72%,0)  scale(0.7,0.7) rotateX(10deg);
+ 
+	}	
+.sim-anim-9:hover img:nth-child(6){
+    -ms-transform: translate(72%,-70%) scale(0.7,0.7) rotateX(10deg);
+   	-webkit-transform: translate(72%,-70%)  scale(0.7,0.7) rotateX(10deg);  
+    transform: translate(72%,-70%)  scale(0.7,0.7) rotateX(10deg); 
+	
+	}	
+.sim-anim-9:hover img:nth-child(7){
+    -ms-transform: translate(-72%,-70%)  scale(0.7,0.7) rotateX(10deg);  
+   	-webkit-transform: translate(-72%,-70%)  scale(0.7,0.7) rotateX(10deg);  
+    transform: translate(-72%,-70%)  scale(0.7,0.7) rotateX(10deg); 
+	
+	}		
+.sim-anim-9:hover img:nth-child(8){
+    -ms-transform: translate(0,-70%) scale(0.7,0.7) rotateX(10deg); 
+   	-webkit-transform: translate(0,-70%) scale(0.7,0.7) rotateX(10deg);
+    transform: translate(0,-70%) scale(0.7,0.7) rotateX(10deg);
+ 
+	}	
+.sim-anim-9:hover img:nth-child(9){
+    -ms-transform: scale(0.7,0.7) rotateX(10deg); 
+   	-webkit-transform:scale(0.7,0.7) rotateX(10deg);
+    transform: scale(0.7,0.7) rotateX(10deg); 
+	}	
+
+
+// Immage with Card UI Blog Tiles from http://codepen.io/mkurapov/pen/qNQXxz
+
+.wrap
+{
+  margin: 0 auto;
+  width:100%;
+  height:100%;
+  line-height:130px;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+  align: center;
+}
+.Supertiles
+{
+margin: 0 auto !important;
+  width:380px;
+  height:380px;
+  margin:5px;
+  background-color:#99aeff;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: transparent;
+  overflow:hidden;
+  color:white;
+  font-family:'Roboto';
+  
+}
+
+
+
+.Supertiles img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+.Supertiles .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding:30px;
+  
+  height:calc(100% - 60px);
+}
+.Supertiles h1
+{
+ 
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.Supertiles h2
+{
+  font-weight:100;
+  margin:20px 0 0 0;
+  font-style:italic;
+   transform: translateX(200px);
+}
+.Supertiles p
+{
+  font-weight:300;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+.Supertiles:hover
+{
+/*   background-color:#99aeff; */
+box-shadow: none;
+  transform:scale(1);
+}
+.Supertiles:hover img
+{
+  opacity: 0.2;
+}
+.Supertiles:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+.dots
+{
+  position:absolute;
+  bottom:20px;
+  right:30px;
+  margin: 0 auto;
+  width:30px;
+  height:30px;
+  color:currentColor;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  
+}
+
+.dots span
+{
+    width: 5px;
+    height:5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display:block;
+  opacity:0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+ 
+}
+
+.Supertiles:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+.dots span:nth-child(1)
+{
+   transition-delay: 0.05s;
+}
+.dots span:nth-child(2)
+{
+   transition-delay: 0.1s;
+}
+.dots span:nth-child(3)
+{
+   transition-delay: 0.15s;
+}
+
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+
+// Another Image Hover with details from http://codepen.io/littlesnippets/pen/rrvvxw
+
+.snip1567 {
+  background-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 8px;
+  max-width: 310px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.snip1567 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1567 img {
+  max-width: 100%;
+  opacity: 0.75;
+  position: relative;
+  vertical-align: top;
+}
+
+.snip1567 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1567 h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  background-color: #000000;
+  top: 0;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin: 0;
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.snip1567 p {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0px 20px;
+  opacity: 0;
+  text-align: right;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1567 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 54px;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.snip1567 .hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: rgba(236, 188, 46, 0.75);
+  display: flex;
+  font-size: 65px;
+  justify-content: center;
+  opacity: 0;
+}
+
+.snip1567 a {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.snip1567:hover .hover,
+.snip1567.hover .hover {
+  opacity: 1;
+}
+
+.snip1567:hover p,
+.snip1567.hover p {
+  opacity: 1;
+}
+
+.snip1567:hover h3,
+.snip1567.hover h3 {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.snip1567:hover i,
+.snip1567.hover i {
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+  transform: translate(-50%, -50%) scale(0.1);
+  opacity: 0;
+}
+
+
+// More Image hover from http://codepen.io/littlesnippets/pen/JRodGj
+
+.snip1552 {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.snip1552 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1552 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1552 figcaption {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  z-index: 1;
+  bottom: 0;
+}
+
+.snip1552 h3,
+.snip1552 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1552 h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.snip1552 p {
+  font-weight: normal;
+  font-style: italic;
+  color: #888;
+  font-size: 0.9em;
+  padding-left: 15px;
+  -webkit-transform: translateX(-25px);
+  transform: translateX(-25px);
+}
+
+.snip1552 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1552:hover > img,
+.snip1552.hover > img {
+  opacity: 0.1;
+}
+
+.snip1552:hover h3,
+.snip1552.hover h3,
+.snip1552:hover p,
+.snip1552.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.snip1552 a:hover {
+    background: transparent !important;
+ color: red !important;
+
+}
+
+.snip1552 a {
+     color: transparent !important;
+border-bottom: none !important;
+box-shadow: none !important;
+    color: transparent !important;
+
+}
+
+// Image hover with icons from http://codepen.io/littlesnippets/pen/dpbgdV 
+
+.snip1550 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.snip1550 *,
+.snip1550 *:before,
+.snip1550 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1550 a {
+     color: transparent !important;
+border-bottom: none !important;
+box-shadow: none !important;
+
+
+}
+
+
+.snip1550:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  content: '';
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1550 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1550 .icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.snip1550 a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.snip1550 a i {
+  display: block;
+  font-size: 23.52941176px;
+  line-height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+.snip1550 a i:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.snip1550:hover:before,
+.snip1550.hover:before {
+  opacity: 0.5;
+}
+.snip1550:hover a,
+.snip1550.hover a {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.snip1550:hover a:nth-child(2),
+.snip1550.hover a:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.snip1550:hover a:nth-child(3),
+.snip1550.hover a:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+// Image hover with mutliple links from http://codepen.io/littlesnippets/pen/LNNNQY
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,900);
+figure.snip1437 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 230px;
+  width: 100%;
+  color: #ffffff;
+  text-align: right;
+  font-size: 16px;
+  background-color: #000000;
+  text-transform: uppercase;
+}
+figure.snip1437:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30%;
+  right: 70%;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: skew(20deg) translateX(-75%);
+  transform: skew(20deg) translateX(-75%);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1437 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1437 img {
+  max-width: 100%;
+}
+figure.snip1437 figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 20px;
+}
+figure.snip1437 h3,
+figure.snip1437 .links {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+figure.snip1437 h3 {
+  line-height: 1.3em;
+  font-weight: 900;
+  font-size: 1.3em;
+}
+figure.snip1437 .links {
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+figure.snip1437 .links li {
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  opacity: 0;
+  list-style: none;
+}
+figure.snip1437 a {
+  padding: 2px 0;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+figure.snip1437 a:hover {
+  color: #f39c12;
+}
+figure.snip1437:hover:after,
+figure.snip1437.hover:after {
+  -webkit-transform: skew(20deg) translateX(0%);
+  transform: skew(20deg) translateX(0%);
+}
+figure.snip1437:hover img,
+figure.snip1437.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+figure.snip1437:hover li,
+figure.snip1437.hover li {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+figure.snip1437:hover li:first-child,
+figure.snip1437.hover li:first-child {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.snip1437:hover li:nth-child(2),
+figure.snip1437.hover li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1437:hover li:nth-child(3),
+figure.snip1437.hover li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip1437:hover li:nth-child(4),
+figure.snip1437.hover li:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+
+//Another cool social hover icon image
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900);
+figure.snip1439 {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 230px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
+figure.snip1439 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1439 img {
+  opacity: 1;
+  width: 100%;
+}
+figure.snip1439:after,
+figure.snip1439:before,
+figure.snip1439 figcaption:after,
+figure.snip1439 figcaption:before {
+  background: #0a0a0a;
+  width: 25%;
+  position: absolute;
+  content: '';
+  opacity: 0;
+  -webkit-transition: all 0.3s steps(4);
+  transition: all 0.3s steps(4);
+  z-index: 1;
+  top: 50%;
+  bottom: 50%;
+}
+figure.snip1439:before {
+  left: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+figure.snip1439:after {
+  left: 25%;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.snip1439 figcaption:before {
+  left: 50%;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  z-index: -1;
+}
+figure.snip1439 figcaption:after {
+  left: 75%;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  z-index: -1;
+}
+figure.snip1439 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 30px;
+}
+figure.snip1439 h2,
+figure.snip1439 p,
+figure.snip1439 .icons {
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+}
+figure.snip1439 h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+figure.snip1439 p {
+  font-weight: 300;
+}
+figure.snip1439 .icons {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+figure.snip1439 i {
+  padding: 0px 10px;
+  display: inline-block;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.8;
+}
+figure.snip1439 i:hover {
+  opacity: 1;
+}
+figure.snip1439:hover:after,
+figure.snip1439.hover:after,
+figure.snip1439:hover:before,
+figure.snip1439.hover:before,
+figure.snip1439:hover figcaption:after,
+figure.snip1439.hover figcaption:after,
+figure.snip1439:hover figcaption:before,
+figure.snip1439.hover figcaption:before {
+  top: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+figure.snip1439:hover figcaption h2,
+figure.snip1439.hover figcaption h2,
+figure.snip1439:hover figcaption p,
+figure.snip1439.hover figcaption p,
+figure.snip1439:hover figcaption .icons,
+figure.snip1439.hover figcaption .icons {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+figure.snip1439:hover figcaption h2,
+figure.snip1439.hover figcaption h2,
+figure.snip1439:hover figcaption .icons,
+figure.snip1439.hover figcaption .icons {
+  opacity: 1;
+}
+figure.snip1439:hover figcaption p,
+figure.snip1439.hover figcaption p {
+  opacity: 0.7;
+}
+
+figure.snip1439 a:hover {
+    background: transparent !important;
+ color: red !important;
+
+}
+
+figure.snip1439 a {
+     color: transparent !important;
+border-bottom: none !important;
+box-shadow: none !important;
+
+
+}
+
+// image hover with read more button from http://codepen.io/littlesnippets/pen/zqZMRW
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+figure.snip1455 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 230px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #07090c;
+  font-size: 16px;
+}
+figure.snip1455 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1455 img {
+  max-width: 100%;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  backface-visibility: hidden;
+}
+figure.snip1455 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scale(0.5) translate(0%, -50%);
+  transform: scale(0.5) translate(0%, -50%);
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  z-index: 1;
+  opacity: 0;
+  padding: 0 30px;
+}
+figure.snip1455 h3,
+figure.snip1455 p {
+  line-height: 1.5em;
+}
+figure.snip1455 h3 {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+figure.snip1455 p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+figure.snip1455 .read-more {
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+figure.snip1455 .read-more:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+figure.snip1455:hover img,
+figure.snip1455.hover img {
+  -webkit-animation: snip1455 0.45s linear forwards;
+  animation: snip1455 0.45s linear forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+figure.snip1455:hover figcaption,
+figure.snip1455.hover figcaption {
+  -webkit-transform: scale(1) translate(0, -50%);
+  transform: scale(1) translate(0, -50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+@keyframes snip1455 {
+  50% {
+    -webkit-transform: scale(0.8) translateX(0%);
+    transform: scale(0.8) translateX(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateX(150%);
+    transform: scale(0.8) translateX(150%);
+    opacity: 0.5;
+  }
+}
+figure.snip1455 a:hover {
+
+}
+
+figure.snip1455 a {
+
+box-shadow: none;
+
+}
+
+
+// ANOTHER COOL IMAGE HOVER WITH SOCIAL ICONS FROM http://codepen.io/littlesnippets/pen/LNemdz
+
+figure.snip1471 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 230px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+}
+figure.snip1471 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+figure.snip1471 img {
+  opacity: 0.8;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.snip1471 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+figure.snip1471 figcaption > div {
+  height: 50%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+figure.snip1471 h2,
+figure.snip1471 h3,
+figure.snip1471 .icons {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+figure.snip1471 h2 {
+  font-weight: 900;
+  bottom: 0;
+}
+figure.snip1471 h3 {
+  font-size: 1em;
+  top: 0;
+  font-weight: 500;
+}
+figure.snip1471 .icons {
+  opacity: 0;
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
+}
+figure.snip1471 .icons a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 1.6em;
+  opacity: 0.6;
+}
+figure.snip1471 .icons a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+figure.snip1471:hover img,
+figure.snip1471.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.snip1471:hover figcaption h3,
+figure.snip1471.hover figcaption h3 {
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
+  opacity: 0;
+}
+figure.snip1471:hover figcaption .icons,
+figure.snip1471.hover figcaption .icons {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+figure.snip1471 a:hover {
+    background: transparent !important;
+ 
+
+}
+
+figure.snip1471 a {
+    
+border-bottom: none !important;
+box-shadow: none !important;
+
+
+}
+
